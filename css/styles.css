@@ -1,19 +1,19 @@
 :root {
-    --bg-color: #f7f9f6;
-    /* Off-white background */
-    --surface-color: #ffffff;
-    --surface-alt: #f0f2ee;
+    --bg-color: #0a0a08;
+    /* Premium dark background */
+    --surface-color: #141412;
+    --surface-alt: #050505;
     --accent-color: #7ab583;
     /* Organic sage green */
     --accent-glow: rgba(122, 181, 131, 0.2);
     --accent-dim: rgba(122, 181, 131, 0.1);
-    --text-primary: #1a3c34;
-    /* Deep forest green for text */
-    --text-secondary: #3d504a;
-    /* Darker muted sage for better contrast */
+    --text-primary: #ffffff;
+    /* Pure white for dark mode */
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    /* Soft white for muted text */
     --font-main: 'Inter', sans-serif;
     --font-serif: 'Playfair Display', serif;
-    --border-subtle: rgba(26, 60, 52, 0.08);
+    --border-subtle: rgba(255, 255, 255, 0.08);
     /* Subtle border for grid aesthetic */
     --border-accent: rgba(122, 181, 131, 0.4);
     --radius-card: 0px;
@@ -764,7 +764,7 @@ body {
     z-index: 1;
     padding: 6rem 4%;
     overflow: hidden;
-    background: var(--surface-alt);
+    background: #0a0a08;
 }
 
 .specialist-glow {
@@ -841,7 +841,7 @@ body {
 
 .specialist-bio p {
     font-size: 1rem;
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.75);
     line-height: 1.8;
 }
 
