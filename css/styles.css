@@ -503,7 +503,7 @@ body::before {
     margin: 0;
     color: #ffffff;
     position: relative; /* For glow positioning */
-    overflow: visible; /* Allow glows to bleed across sections */
+    overflow: hidden; /* Changed from visible to prevent horizontal scroll on mobile */
 }
 
 /* Section Radial Glows (Green) */
@@ -1177,7 +1177,7 @@ body::before {
     margin: 0;
     color: #ffffff;
     padding: 8rem 4%; /* Increased padding for impact */
-    overflow: visible; 
+    overflow: hidden; 
     position: relative;
     z-index: 1;
 }
@@ -1838,6 +1838,12 @@ body::before {
     line-height: 1.5;
 }
 
+.conversion-area {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
 @media (max-width: 900px) {
     .pricing-parent-card {
         margin: 2rem 0;
@@ -1873,7 +1879,7 @@ body::before {
     z-index: 1;
     text-align: center;
     padding: 8rem 2rem;
-    overflow: visible;
+    overflow: hidden;
     background: #0a0a08;
 }
 
