@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Fitoterapia, Tintura Medicinal e Saboaria Natural — Dr. Julimar Meneses</title>
+    <title>Curso de Fitoterapia e Tintura Medicinal — Dr. Julimar Meneses</title>
     <meta name="description"
-        content="Aprenda Fitoterapia, Tintura Medicinal e Saboaria Natural com o Dr. Julimar Meneses — Nutricionista, Farmacêutico e Doutor em Naturopatia. Inscreva-se agora.">
+        content="Aprenda Fitoterapia e Tintura Medicinal com o Dr. Julimar Meneses — Nutricionista, Farmacêutico e Doutor em Naturopatia. Inscreva-se agora.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="global-glow">
     <div class="spotlight"></div>
     <div class="particles" id="particles"></div>
 
@@ -63,8 +63,6 @@
     <main>
         <!-- MÓDULOS DO CURSO -->
         <section id="modulos" class="content-section">
-            <div class="section-glow section-glow--top"></div>
-            <div class="section-glow section-glow--bottom"></div>
             <div class="section-header fade-up">
                 <span class="section-label">O que você vai aprender</span>
                 <h2 class="section-title">Módulos do Curso</h2>
@@ -107,23 +105,6 @@
                     </div>
                 </article>
 
-                <!-- Módulo 3 -->
-                <article class="module-card fade-up" style="animation-delay:0.3s">
-                    <div class="module-card__image-wrapper">
-                        <img src="assets/images/modulo-saboaria.png" alt="Saboaria Natural" class="module-card__image">
-                    </div>
-                    <div class="module-card__body">
-                        <h3 class="module-card__title">Saboaria Natural</h3>
-                        <p class="module-card__desc">Crie sabões artesanais com propriedades terapêuticas usando óleos
-                            vegetais, extratos de plantas e ingredientes naturais selecionados.</p>
-                        <ul class="module-card__topics">
-                            <li>Método frio e quente de saponificação</li>
-                            <li>Óleos vegetais e suas propriedades</li>
-                            <li>Incorporação de ativos fitoterapêuticos</li>
-                            <li>Acabamento e embalagem artesanal</li>
-                        </ul>
-                    </div>
-                </article>
             </div>
         </section>
 
@@ -225,14 +206,57 @@
                     </span>
                     <h3>Receitas Exclusivas</h3>
                     <p>Formulações desenvolvidas e testadas pelo próprio Dr. Julimar.</p>
+        </section>
+        
+        <!-- SEÇÃO DE BÔNUS EXCLUSIVOS -->
+        <section id="bonus" class="bonus-section">
+            <div class="section-header fade-up">
+                <span class="section-label">Acelere seus Resultados</span>
+                <h2 class="section-title">Bônus Exclusivos</h2>
+                <p style="color: rgba(255,255,255,0.6); margin-top: 1rem;">Ao se inscrever hoje, você leva mais de R$ 500 em bônus sem custo adicional.</p>
+            </div>
+            
+            <div class="bonus-grid">
+                <!-- Bônus 1 -->
+                <div class="bonus-card fade-up" style="animation-delay: 0.1s">
+                    <div class="bonus-card__img-wrap">
+                        <img src="assets/images/bonus-aloe.png" alt="Imersão Aloe Vera">
+                    </div>
+                    <div class="bonus-card__body">
+                        <span class="bonus-card__badge">Incluso</span>
+                        <h3 class="bonus-card__title">Imersão Aloe Vera (Gravada)</h3>
+                        <p class="bonus-card__desc">Aprenda tudo sobre o gel puro, conservação e protocolos de uso terapêutico para pele e digestão.</p>
+                    </div>
+                </div>
+                
+                <!-- Bônus 2 -->
+                <div class="bonus-card fade-up" style="animation-delay: 0.2s">
+                    <div class="bonus-card__img-wrap">
+                        <img src="assets/images/bonus-ebook.png" alt="E-book de Receitas">
+                    </div>
+                    <div class="bonus-card__body">
+                        <span class="bonus-card__badge">Incluso</span>
+                        <h3 class="bonus-card__title">E-book de Receitas Especiais</h3>
+                        <p class="bonus-card__desc">Guia prático com receitas anti-inflamatórias e sem glúten para complementar sua nova farmácia caseira.</p>
+                    </div>
+                </div>
+                
+                <!-- Bônus 3 -->
+                <div class="bonus-card fade-up" style="animation-delay: 0.3s">
+                    <div class="bonus-card__img-wrap">
+                        <img src="assets/images/bonus-mentoria.png" alt="Mentoria de Bastidores">
+                    </div>
+                    <div class="bonus-card__body">
+                        <span class="bonus-card__badge">Incluso</span>
+                        <h3 class="bonus-card__title">Mentoria de Bastidores</h3>
+                        <p class="bonus-card__desc">Vídeos exclusivos mostrando o dia a dia do preparo farmacêutico e dicas avançadas de formulação.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- AVALIAÇÕES / DEPOIMENTOS -->
         <section id="avaliacoes" class="content-section">
-            <div class="section-glow section-glow--top"></div>
-            <div class="section-glow section-glow--bottom"></div>
             <div class="section-header fade-up">
                 <span class="section-label">Comunidade</span>
                 <h2 class="section-title">O que dizem os alunos</h2>
@@ -255,7 +279,7 @@
                 <!-- Depoimento 2 -->
                 <div class="testimonial-card fade-up" style="animation-delay:0.2s">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"As aulas práticas de tintura e saboaria mudaram minha forma de ver a farmácia caseira. Hoje minha família quase não usa remédios sintéticos."</p>
+                    <p class="testimonial-text">"As aulas práticas de tintura mudaram minha forma de ver a farmácia caseira. Hoje minha família quase não usa remédios sintéticos."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">JG</div>
                         <div class="author-info">
@@ -277,37 +301,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
+
 
         <!-- CONVERSION AREA (OFFER + FINAL CTA) -->
         <div class="conversion-area">
-            <div class="section-glow section-glow--top-left"></div>
-            <div class="section-glow section-glow--bottom" style="bottom: 10%; left: 0;"></div>
 
             <!-- OFERTA E ENTREGÁVEIS -->
             <section class="offer-details">
-                <!-- ANCORAGEM / TUDO QUE ESTÁ INCLUSO -->
-                <div class="anchoring-bonus fade-up">
-                    <h3 class="bonus-title">O que você recebe ao se inscrever hoje:</h3>
-                    <div class="bonus-list">
-                        <div class="bonus-item">
-                            <span class="bonus-tag">INCLUSO</span>
-                            <p><strong>Aulas Gravadas da Imersão Aloe Vera Gel:</strong> Aprenda tudo sobre as propriedades e o preparo do gel puro.</p>
-                        </div>
-                        <div class="bonus-item">
-                            <span class="bonus-tag">INCLUSO</span>
-                            <p><strong>Mentoria de Gravação da Imersão:</strong> Bastidores e técnicas avançadas de preparo medicinal.</p>
-                        </div>
-                        <div class="bonus-item">
-                            <span class="bonus-tag">INCLUSO</span>
-                            <p><strong>E-book de Receitas Sem Glúten:</strong> Complemente sua saúde com uma alimentação anti-inflamatória.</p>
-                        </div>
-                        <div class="bonus-item">
-                            <span class="bonus-tag">COMPLETO</span>
-                            <p><strong>Materiais de Apoio:</strong> Apostila digital detalhada, caderno de receitas e guias práticos em PDF.</p>
-                        </div>
-                    </div>
+                <div class="section-header fade-up" style="margin-bottom: 2rem;">
+                    <h2 class="section-title" style="font-size: 2rem;">Invista na sua autonomia</h2>
                 </div>
 
                 <!-- PRICING & OFFER SECTION -->
@@ -322,7 +325,6 @@
                             <ul class="pricing-checklist">
                                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Módulo 01: Fitoterapia</li>
                                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Módulo 02: Tintura Medicinal</li>
-                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Módulo 03: Saboaria Natural</li>
                                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Grupo Exclusivo de Suporte</li>
                                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Certificado de Conclusão</li>
                                 <li class="unavailable"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> Imersão Aloe Vera (Gravada)</li>
@@ -391,8 +393,6 @@
 
             <!-- NATURE QUOTE SECTION -->
             <section class="nature-quote-section">
-                <div class="section-glow section-glow--top-left"></div>
-                <div class="section-glow section-glow--bottom"></div>
                 <div class="nature-quote__bg-img"></div>
                 <div class="nature-quote-container">
                     <div class="nature-quote-content fade-up">
@@ -405,6 +405,75 @@
             </section>
         </div>
 
+        <!-- SEÇÃO FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="section-header fade-up">
+                <span class="section-label">Dúvidas Comuns</span>
+                <h2 class="section-title">FAQ</h2>
+            </div>
+            
+            <div class="faq-accordion fade-up">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quem pode fazer o curso?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Qualquer pessoa interessada em cuidar da saúde de forma natural. O curso é didático, partindo do zero, ideal tanto para leigos quanto para profissionais da saúde que querem ampliar seus conhecimentos.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Por quanto tempo terei acesso?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            O acesso às aulas e materiais é vitalício no Plano Completo e por 1 ano no Plano Essencial. Você pode assistir no seu ritmo, de onde quiser.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Tem certificado de conclusão?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Sim! Após concluir todos os módulos, você receberá um certificado assinado pelo Dr. Julimar Meneses, comprovando sua capacitação tecnológica em fitoterapia e tinturas.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como recebo o acesso ao curso?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Imediatamente após a confirmação do pagamento, você receberá um e-mail com seus dados de acesso à nossa plataforma exclusiva de alunos.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Tenho suporte para tirar dúvidas?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Sim! Você terá acesso ao nosso grupo exclusivo de suporte para alunos, onde poderá interagir com outros membros e tirar suas dúvidas sobre o conteúdo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -413,7 +482,7 @@
         <div class="footer-container">
             <div class="footer-col">
                 <img src="assets/images/logo.svg" alt="Dr. Julimar Meneses" class="footer-logo">
-                <p class="footer-about">Transformando a saúde através da ciência e da natureza. Formação completa em Fitoterapia, Tinturas e Saboaria Natural.</p>
+                <p class="footer-about">Transformando a saúde através da ciência e da natureza. Formação completa em Fitoterapia e Tinturas.</p>
             </div>
             
 
@@ -442,6 +511,10 @@
         <div class="footer-bottom">
             <p class="footer-name">Dr. Julimar Meneses — CRN-DF 21414</p>
             <p class="footer-copy">&copy; 2026 Dr. Julimar Meneses. Todos os direitos reservados.</p>
+        </div>
+        
+        <div class="footer-disclaimer">
+            <strong>Aviso Legal:</strong> As informações contidas neste curso e site têm caráter meramente educativo e não substituem, em hipótese alguma, o aconselhamento, diagnóstico ou tratamento de profissionais de saúde qualificados. Consulte sempre seu médico, nutricionista ou farmacêutico antes de iniciar qualquer tratamento ou realizar alterações em sua rotina de saúde. Os resultados podem variar de pessoa para pessoa.
         </div>
     </footer>
 
