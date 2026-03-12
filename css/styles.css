@@ -27,6 +27,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    -webkit-text-size-adjust: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -42,16 +49,8 @@ body {
     background-size: 400px 400px;
     color: var(--text-primary);
     font-family: var(--font-main);
-    overflow-x: hidden;
-    width: 100%;
     min-height: 100vh;
-    -webkit-overflow-scrolling: touch; /* Momentum scrolling for iOS */
-}
-
-html {
-    scroll-behavior: smooth;
-    width: 100%;
-    /* overflow-x removed to avoid scroll bugs on mobile */
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Fine Film Grain Texture */
@@ -1307,9 +1306,11 @@ body::before {
     padding: 20px;
     display: inline-flex;
     justify-content: center;
+    display: inline-flex;
     align-items: center;
     position: relative;
-    width: fit-content;
+    width: auto;
+    max-width: 100%;
     margin: 0 auto;
     clip-path: polygon(
         20px 0%, 
@@ -1846,8 +1847,10 @@ body::before {
 
 @media (max-width: 900px) {
     .pricing-parent-card {
-        margin: 2rem 0;
+        margin: 2rem auto;
         padding: 1.2rem;
+        width: 100%;
+        max-width: 100%;
     }
 
     .pricing-parent-card::after,
@@ -2044,8 +2047,8 @@ body::before {
 
 @media (max-width: 900px) {
     .footer-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 
@@ -2193,17 +2196,15 @@ body::before {
     }
 
     .hero__bg-img {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
-        height: 500px; /* Increased for a larger appearance */
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 500px; 
         order: 2;
-        background-position: 80% center; /* Shifted to bring the character to center */
+        background-position: 80% center;
         z-index: 1;
-        margin: 0 -1.5rem; 
-        width: calc(100% + 3rem);
+        width: 100%;
         background-size: cover;
     }
 
@@ -2268,23 +2269,20 @@ body::before {
 
     .nature-quote__bg-img {
         position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
         height: 70vh; 
         max-height: 800px; 
         order: 2;
-        margin: -7rem -1.5rem 0; /* Further reduced gap by pulling the image up more */
-        width: calc(100% + 3rem);
-        background-position: 88% bottom; /* Shifting slightly back to the right */
-        background-size: 220%; /* Restoring the larger zoom */
+        width: 100%;
+        background-position: 88% bottom;
+        background-size: 220%;
         z-index: 1;
         opacity: 1;
+        margin-top: -7rem;
     }
 
     .nature-quote-container {
         order: 1;
         margin-bottom: 0;
+        width: 100%;
     }
 }
