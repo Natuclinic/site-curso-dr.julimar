@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fitoterapia e Tintura Medicinal — Dr. Julimar Meneses</title>
+    <meta name="description"
+        content="Aprenda Fitoterapia e Tintura Medicinal com o Dr. Julimar Meneses — Nutricionista, Farmacêutico e Doutor em Naturopatia. Inscreva-se agora.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Krona+One&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="noise-canvas" class="noise-overlay"></canvas>
+    <div class="spotlight"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Logo moved to Hero -->
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero__bg-img"></div>
+        <div class="hero__content fade-up">
+            <div class="hero__text">
+                <a href="/" class="hero__logo">
+                    <img src="assets/images/logo.svg" alt="Dr. Julimar Meneses">
+                </a>
+                <h1 class="hero__title">
+                    CRIE SUA PRÓPRIA<br>
+                    <span class="hero__title--accent">FARMÁCIA EM CASA</span>
+                </h1>
+                <p class="hero__subtitle">
+                    E nunca mais dependa de remédios caros<br class="desktop-br"> e cheios de efeitos colaterais.
+                </p>
+                <div class="hero__actions">
+                    <a href="#inscricao" class="btn btn--primary btn--star btn--glare">
+                        <span class="glare"></span>
+                        <span class="btn__content">Garantir Minha Vaga</span>
+                    </a>
+                </div>
+                <div class="hero__event fade-up" style="animation-delay:0.2s">
+                    <div class="zoom-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2D8CFF">
+                            <path
+                                d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <span>AO VIVO PELO ZOOM • 08 DE ABRIL • 20H</span>
+                </div>
+                <div class="vagas-indicator fade-up" style="animation-delay:0.3s">
+                    <div class="vagas-text">
+                        <span>CORRA! <strong id="vagas-percent">75%</strong> das vagas já foram preenchidas</span>
+                    </div>
+                    <div class="vagas-bar">
+                        <div id="vagas-bar-progress" class="vagas-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- MÓDULOS DO CURSO -->
+        <section id="modulos" class="content-section">
+            <div class="section-header fade-up">
+                <span class="section-label">O que você vai aprender</span>
+                <h2 class="section-title">Módulos do Curso</h2>
+            </div>
+
+            <div class="modules-grid">
+                <!-- Módulo 1 -->
+                <article class="module-card fade-up" style="animation-delay:0.1s">
+                    <div class="module-card__image-wrapper">
+                        <img src="assets/images/modulo-fitoterapia.png" alt="Fitoterapia" class="module-card__image">
+                    </div>
+                    <div class="module-card__body">
+                        <h3 class="module-card__title">Fitoterapia</h3>
+                        <p class="module-card__desc">Compreenda a ciência por trás das plantas medicinais. Aprenda
+                            identificação, colheita, preparo e uso terapêutico de ervas com base em evidências.</p>
+                        <ul class="module-card__topics">
+                            <li>Princípios ativos e ação farmacológica</li>
+                            <li>Ervas para modulação intestinal</li>
+                            <li>Protocolos clínicos integrativos</li>
+                            <li>Segurança e contraindicações</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Módulo 2 -->
+                <article class="module-card fade-up" style="animation-delay:0.2s">
+                    <div class="module-card__image-wrapper">
+                        <img src="assets/images/modulo-tintura.png" alt="Tintura Medicinal" class="module-card__image">
+                    </div>
+                    <div class="module-card__body">
+                        <h3 class="module-card__title">Tintura Medicinal</h3>
+                        <p class="module-card__desc">Domine o processo completo de extração e formulação de tinturas. Do
+                            macerado à embalagem, com técnicas farmacêuticas profissionais.</p>
+                        <ul class="module-card__topics">
+                            <li>Escolha do solvente ideal</li>
+                            <li>Métodos de maceração e percolação</li>
+                            <li>Formulação e conservação</li>
+                            <li>Padronização de extratos</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- QUEM SERÁ O PROFESSOR -->
+        <section class="professor-section content-section">
+            <div class="section-header fade-up">
+                <span class="section-label">Seu Guia</span>
+                <h2 class="section-title">Quem será o Professor?</h2>
+            </div>
+            <div class="professor-inner fade-up">
+                <div class="professor-card-wrap">
+                    <div class="professor-gif-card">
+                        <div class="professor-gif-wrap">
+                            <img src="assets/images/gif.gif" alt="Dr. Julimar Meneses" class="professor-gif">
+                        </div>
+                        <div class="professor-card-content">
+                            <h3 class="professor-name">Dr. Julimar Meneses</h3>
+                            <p class="professor-credentials">Nutricionista · Farmacêutico · Doutor em Naturopatia</p>
+                            <p class="professor-bio">Com mais de 18 anos de experiência clínica, o Dr. Julimar é
+                                referência em
+                                medicina integrativa e terapias naturais no Brasil. Sua abordagem une ciência e natureza
+                                para
+                                transformar a saúde das pessoas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL PRODUCT CTA -->
+
+        <section class="final-cta fade-up">
+            <div class="final-cta-container">
+                <div class="final-cta-content">
+                    <h2 class="section-title">Comece sua própria<br>Farmácia em Casa</h2>
+                    <p class="final-cta-subtitle" style="color: rgba(255,255,255,0.7)">Aprenda a criar suas próprias
+                        fórmulas terapêuticas com quem é autoridade no assunto há mais de 18 anos.</p>
+                    <div class="final-cta-actions">
+                        <a href="#inscricao" class="btn btn--primary btn--star btn--glare">
+                            <span class="glare"></span>
+                            <span class="btn__content">Quero Me Inscrever Agora</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="final-cta-image-wrap">
+                    <img src="assets/images/natural-pharmacy-cta-banner.png" alt="Produtos Naturais Terapêuticos"
+                        class="final-cta-image">
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="benefits-section content-section">
+            <div class="section-header fade-up">
+                <span class="section-label">Fundamentos</span>
+                <h2 class="section-title">O que você receberá</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-up" style="animation-delay:0.05s">
+                    <span class="benefit-icon">
+                        <img src="assets/images/Apostila Completa.svg" alt="Apostila Completa">
+                    </span>
+                    <h3>Apostila Completa</h3>
+                    <p>Material didático detalhado com formulações, protocolos e referências científicas.</p>
+                </div>
+                <div class="benefit-card fade-up" style="animation-delay:0.1s">
+                    <span class="benefit-icon">
+                        <img src="assets/images/Aulas Gravadas.svg" alt="Aulas Gravadas">
+                    </span>
+                    <h3>Aulas Gravadas</h3>
+                    <p>Acesso às gravações para revisar o conteúdo quantas vezes precisar.</p>
+                </div>
+                <div class="benefit-card fade-up" style="animation-delay:0.15s">
+                    <span class="benefit-icon">
+                        <img src="assets/images/Prática Hands-on.svg" alt="Prática Hands-on">
+                    </span>
+                    <h3>Prática Hands-on</h3>
+                    <p>Atividades práticas para fixar o conhecimento com formulações reais.</p>
+                </div>
+                <div class="benefit-card fade-up" style="animation-delay:0.2s">
+                    <span class="benefit-icon">
+                        <img src="assets/images/Certificado.svg" alt="Certificado">
+                    </span>
+                    <h3>Certificado</h3>
+                    <p>Certificado de conclusão emitido e assinado pelo Dr. Julimar.</p>
+                </div>
+                <div class="benefit-card fade-up" style="animation-delay:0.25s">
+                    <span class="benefit-icon">
+                        <img src="assets/images/Grupo Exclusivo.svg" alt="Grupo Exclusivo">
+                    </span>
+                    <h3>Grupo Exclusivo</h3>
+                    <p>Acesso a grupo de suporte com trocas, dúvidas e novidades da área.</p>
+                </div>
+                <div class="benefit-card fade-up" style="animation-delay:0.3s">
+                    <span class="benefit-icon">
+                        <img src="assets/images/Receitas Exclusivas.svg" alt="Receitas Exclusivas">
+                    </span>
+                    <h3>Receitas Exclusivas</h3>
+                    <p>Formulações desenvolvidas e testadas pelo próprio Dr. Julimar.</p>
+        </section>
+
+        <!-- SEÇÃO DE BÔNUS EXCLUSIVOS -->
+        <section id="bonus" class="bonus-section">
+            <div class="section-header fade-up">
+                <span class="section-label">Acelere seus Resultados</span>
+                <h2 class="section-title">Bônus Exclusivos</h2>
+                <p style="color: rgba(255,255,255,0.6); margin-top: 1rem;">Ao se inscrever hoje, você leva mais de R$
+                    500 em bônus sem custo adicional.</p>
+            </div>
+
+            <div class="bonus-grid">
+                <!-- Bônus 1 -->
+                <div class="bonus-card fade-up" style="animation-delay: 0.1s">
+                    <div class="bonus-card__img-wrap">
+                        <img src="assets/images/bonus-aloe.png" alt="Imersão Aloe Vera">
+                    </div>
+                    <div class="bonus-card__body">
+                        <span class="bonus-card__badge">Incluso</span>
+                        <h3 class="bonus-card__title">Imersão Aloe Vera (Gravada)</h3>
+                        <p class="bonus-card__desc">Aprenda tudo sobre o gel puro, conservação e protocolos de uso
+                            terapêutico para pele e digestão.</p>
+                    </div>
+                </div>
+
+                <!-- Bônus 2 -->
+                <div class="bonus-card fade-up" style="animation-delay: 0.2s">
+                    <div class="bonus-card__img-wrap">
+                        <img src="assets/images/bonus-ebook.png" alt="Coletânea de Receitas">
+                    </div>
+                    <div class="bonus-card__body">
+                        <span class="bonus-card__badge">Incluso</span>
+                        <h3 class="bonus-card__title">Coletânea de Receitas Especiais s/ Glútem, Chás Detox e mais</h3>
+                        <p class="bonus-card__desc">Guia prático com receitas anti-inflamatórias e sem glúten para
+                            complementar sua nova farmácia caseira.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- AVALIAÇÕES / DEPOIMENTOS -->
+        <section id="avaliacoes" class="content-section">
+            <div class="section-header fade-up">
+                <span class="section-label">Comunidade</span>
+                <h2 class="section-title">O que dizem os alunos</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Depoimento 1 -->
+                <div class="testimonial-card fade-up" style="animation-delay:0.1s">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Sempre busquei alternativas naturais, mas faltava a base científica. O
+                        Dr. Julimar entrega exatamente o que promete: segurança e eficácia em cada fórmula."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <strong>Ana Maria F.</strong>
+                            <span>Aluna da última turma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="testimonial-card fade-up" style="animation-delay:0.2s">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"As aulas práticas de tintura mudaram minha forma de ver a farmácia
+                        caseira. Hoje minha família quase não usa remédios sintéticos."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JG</div>
+                        <div class="author-info">
+                            <strong>João Guilherme</strong>
+                            <span>Estudante de Nutrição</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="testimonial-card fade-up" style="animation-delay:0.3s">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"O suporte no grupo exclusivo é maravilhoso. Não estamos apenas
+                        comprando um curso, estamos entrando para uma comunidade de saúde real."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LC</div>
+                        <div class="author-info">
+                            <strong>Lúcia Cavalcante</strong>
+                            <span>Terapeuta Integrativa</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- CONVERSION AREA (OFFER + FINAL CTA) -->
+        <div class="conversion-area">
+
+            <!-- OFERTA E ENTREGÁVEIS -->
+            <section class="offer-details">
+                <div class="section-header fade-up" style="margin-bottom: 2rem;">
+                    <h2 class="section-title" style="font-size: 2rem;">Invista na sua autonomia</h2>
+                </div>
+
+                <!-- PRICING & OFFER SECTION -->
+                <div class="pricing-parent-card fade-up">
+                    <div id="oferta" class="pricing-grid">
+                        <!-- OPÇÃO 1: ESSENCIAL (Somente o Curso) -->
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <span class="pricing-label">Plano Essencial</span>
+                                <h3 class="pricing-title">Formação Base</h3>
+                            </div>
+                            <ul class="pricing-checklist">
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> Módulo 01: Fitoterapia</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> Módulo 02: Tintura Medicinal</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> Grupo Exclusivo de Suporte</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> Certificado de Conclusão</li>
+                                <li class="unavailable"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg> Imersão Aloe Vera (Gravada)</li>
+                                <li class="unavailable"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg> Coletânea de Receitas (Bônus)</li>
+
+                            </ul>
+
+                            <div class="pricing-offer">
+                                <div class="price-current">
+                                    <span class="price-symbol">R$</span>
+                                    <span class="price-value">67<span class="price-decimals">,00</span></span>
+                                </div>
+                            </div>
+
+                            <a href="#inscricao" class="btn btn--outline" style="width:100%;text-align:center">Escolher
+                                Essencial</a>
+                        </div>
+
+                        <!-- OPÇÃO 2: COMPLETO (Curso + Todos os Bônus) -->
+                        <div class="pricing-card pricing-card--featured">
+                            <div class="pricing-header">
+                                <span class="pricing-label">Plano Completo</span>
+                                <h3 class="pricing-title">Experiência Total</h3>
+                            </div>
+                            <ul class="pricing-checklist">
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> <strong>Tudo do Plano Essencial</strong></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> Imersão Aloe Vera (Gravada)</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> Coletânea de Receitas Especiais s/ Glútem</li>
+
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> Suporte Prioritário VIP</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> Acesso vitalício ao curso</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg> Coletânea de Chás e Receitas Detox</li>
+                            </ul>
+
+                            <div class="pricing-divider"></div>
+
+                            <div class="pricing-offer">
+                                <div class="price-old">De R$ 159,00 por apenas</div>
+                                <div class="price-current">
+                                    <span class="price-symbol">R$</span>
+                                    <span class="price-value">97<span class="price-decimals">,00</span></span>
+                                </div>
+                            </div>
+
+                            <a href="#inscricao" class="btn btn--primary btn--star btn--glare"
+                                style="width:100%;text-align:center">
+                                <span class="glare"></span>
+                                <span class="btn__content">Escolher Completo</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="secure-checkout">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <span>Compra 100% segura. Seus dados estão protegidos.</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-badge fade-up" style="max-width: 800px; margin: 0 auto;">
+                    <div class="guarantee-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-.67 15l-3.33-3.33 1.18-1.18 2.15 2.15 4.82-4.82 1.18 1.18-6 6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="guarantee-text">
+                        <strong>Garantia Incondicional de 7 Dias</strong>
+                        <span>Seu risco é zero. Se não gostar de qualquer detalhe, devolvemos 100% do seu investimento
+                            sem perguntas.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NATURE QUOTE SECTION -->
+            <section class="nature-quote-section">
+                <div class="nature-quote__bg-img"></div>
+                <div class="nature-quote-container">
+                    <div class="nature-quote-content fade-up">
+                        <h2 class="nature-quote-text">
+                            Seu corpo é uma máquina perfeita,<br>
+                            <span class="shiny-text">ele só precisa da natureza.</span>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SEÇÃO FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="section-header fade-up">
+                <span class="section-label">Dúvidas Comuns</span>
+                <h2 class="section-title">FAQ</h2>
+            </div>
+
+            <div class="faq-accordion fade-up">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quem pode fazer o curso?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Qualquer pessoa interessada em cuidar da saúde de forma natural. O curso é didático,
+                            partindo do zero, ideal tanto para leigos quanto para profissionais da saúde que querem
+                            ampliar seus conhecimentos.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Por quanto tempo terei acesso?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            O acesso às aulas e materiais é vitalício no Plano Completo e por 1 ano no Plano Essencial.
+                            Você pode assistir no seu ritmo, de onde quiser.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Tem certificado de conclusão?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Sim! Após concluir todos os módulos, você receberá um certificado assinado pelo Dr. Julimar
+                            Meneses, comprovando sua capacitação tecnológica em fitoterapia e tinturas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como recebo o acesso ao curso?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Imediatamente após a confirmação do pagamento, você receberá um e-mail com seus dados de
+                            acesso à nossa plataforma exclusiva de alunos.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Tenho suporte para tirar dúvidas?</span>
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Sim! Você terá acesso ao nosso grupo exclusivo de suporte para alunos, onde poderá interagir
+                            com outros membros e tirar suas dúvidas sobre o conteúdo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer fade-up">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="assets/images/logo.svg" alt="Dr. Julimar Meneses" class="footer-logo">
+                <p class="footer-about">Transformando a saúde através da ciência e da natureza. Formação completa em
+                    Fitoterapia e Tinturas.</p>
+            </div>
+
+
+            <div class="footer-col">
+                <h4 class="footer-title">Contato</h4>
+                <ul class="footer-contact">
+                    <li><a href="https://wa.me/5561999999999" target="_blank">WhatsApp: (61) 99999-9999</a></li>
+                    <li>E-mail: contato@drjulimar.com.br</li>
+                    <li>Brasília - DF</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <!-- FORMAS DE PAGAMENTO -->
+        <div class="footer-payments">
+            <h4 class="footer-title">Formas de Pagamento</h4>
+            <div class="payment-groups">
+
+                <!-- Cartões de Crédito e Débito -->
+                <div class="payment-group">
+                    <span class="payment-group__label">Crédito &amp; Débito</span>
+                    <div class="payment-icons">
+                        <div class="payment-badge" title="Visa">
+                            <img src="assets/images/payment/visa.png" alt="Visa" width="60" height="40">
+                        </div>
+                        <div class="payment-badge" title="Mastercard">
+                            <img src="assets/images/payment/mastercard.png" alt="Mastercard" width="60" height="40">
+                        </div>
+                        <div class="payment-badge" title="American Express">
+                            <img src="assets/images/payment/amex.png" alt="American Express" width="60" height="40">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartões Nacionais -->
+                <div class="payment-group">
+                    <span class="payment-group__label">Nacionais</span>
+                    <div class="payment-icons">
+                        <div class="payment-badge" title="Elo">
+                            <img src="assets/images/payment/elo.png" alt="Elo" width="60" height="40">
+                        </div>
+                        <div class="payment-badge" title="Hipercard">
+                            <img src="assets/images/payment/hipercard.png" alt="Hipercard" width="60" height="40">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIX & Boleto -->
+                <div class="payment-group">
+                    <span class="payment-group__label">PIX &amp; Boleto</span>
+                    <div class="payment-icons">
+                        <div class="payment-badge payment-badge--pix" title="PIX">
+                            <img src="assets/images/payment/pix.png" alt="PIX" width="40" height="26">
+                        </div>
+                        <div class="payment-badge" title="Boleto">
+                            <img src="assets/images/payment/boleto.png" alt="Boleto" width="40" height="26">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-name">Dr. Julimar Meneses — CRN-DF 21414</p>
+            <p class="footer-copy">&copy; 2026 Dr. Julimar Meneses. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="footer-disclaimer">
+            <strong>Aviso Legal:</strong> As informações contidas neste curso e site têm caráter meramente educativo e
+            não substituem, em hipótese alguma, o aconselhamento, diagnóstico ou tratamento de profissionais de saúde
+            qualificados. Consulte sempre seu médico, nutricionista ou farmacêutico antes de iniciar qualquer tratamento
+            ou realizar alterações em sua rotina de saúde. Os resultados podem variar de pessoa para pessoa.
+        </div>
+    </footer>
+
+    <div id="notification-container" class="notification-container"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
